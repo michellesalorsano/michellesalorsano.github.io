@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Know the Developers </title>
+	<link rel="stylesheet" href="devStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="lightbox.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<div class="hero-header">
+		<div class="wrapper">
+			<header>
+				<div class="logo">
+					<i class="fa-solid fa-d"></i>
+					<div class="logo-text">The Developers</div>
+				</div>
+				<nav>
+					<div class="togglebtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul class="navlinks">
+						<li><a href="project.html">Back to My Project</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="container">
+				<div class="gallery">
+					<a href="images\cyren.jpeg" data-lightbox="models" data-title="Cyren May C. Binauhan">
+						<img src="images\cyren.jpeg">
+					</a>
+					<a href="images\patrick.jpg" data-lightbox="models" data-title="Patrick A. Blanquisco">
+						<img src="images\patrick.jpg">
+					</a>
+					<a href="images\roldan.png" data-lightbox="models" data-title="Roldan A. Encarnacion">
+						<img src="images\roldan.png">
+					</a>
+					<a href="images\david.jpg" data-lightbox="models" data-title="David T. Esteva">
+						<img src="images\david.jpg">
+					</a>
+					<a href="images\Michelle-Salorsano-CV.png" data-lightbox="models" data-title="Michelle G. Salorsano">
+						<img src="images\Michelle-Salorsano-CV.png">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var togglebtn=document.querySelector(".togglebtn");
+		var nav=document.querySelector(".navlinks");
+		var links=document.querySelector(".navlinks li");
+		
+		togglebtn.addEventListener("click", function(){
+			this.classList.toggle("click");
+			nav.classList.toggle("open");
+		})
+	</script>
+	<script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>

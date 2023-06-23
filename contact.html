@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Contact</title>
+	<link rel="stylesheet" href="contStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<div class="hero-header">
+		<div class="wrapper">
+			<header>
+				<div class="logo">
+					<i class="fa-solid fa-m"></i>
+					<div class="logo-text">Send A Message</div>
+				</div>
+				<nav>
+					<div class="togglebtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul class="navlinks">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="project.html">My Project</a></li>
+						<!--<li><a href="#">Resume</a></li>-->
+						<li><a href="certificates.html">Certificates</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="container">
+				<div class="contact-form">
+					<h1>Contact<span>Me</span></h1>
+					<p>Got a question? I'd love to hear from you. Send me a message
+					and I'll respond as soon as possible.</p>
+					<form action="">
+						<input type="" placeholder="Your Name" required>
+						<input type="email" name="email" id="" placeholder="E-mail" required>
+						<input type="" placeholder="Write a Subject" required>
+						<textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." required></textarea>
+						<input type="submit" name="" value="Send your Message" class="btn">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var togglebtn=document.querySelector(".togglebtn");
+		var nav=document.querySelector(".navlinks");
+		var links=document.querySelector(".navlinks li");
+		
+		togglebtn.addEventListener("click", function(){
+			this.classList.toggle("click");
+			nav.classList.toggle("open");
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> My Project </title>
+	<link rel="stylesheet" href="proStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<div class="hero-header">
+		<div class="wrapper">
+			<header>
+				<div class="logo">
+					<i class="fa-solid fa-p"></i>
+					<div class="logo-text">My Project</div>
+				</div>
+				<nav>
+					<div class="togglebtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul class="navlinks">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="project.html">My Project</a></li>
+						<!--<li><a href="#">Resume</a></li>-->
+						<li><a href="certificates.html">Certificates</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="container">
+				<div class="hero-pic">
+					<img src="images\finalLogo1v2.png" alt="appLogo">
+				</div>
+				<div class="hero-text">
+					<h1>City College of Tagaytay Senior High School Mapping Application (CCT-SHS MApp)</h1>
+					<p align="justify">The mobile application, CCT-SHS  MApp, was designed to assist faculty, students, and visitors in finding their destinations using
+					animation, graphics, and programming. It provides a specific path based on the user's chosen destination.</p>
+					<div class="btn-group">
+						<a href="https://drive.google.com/drive/u/0/folders/1WeiK6pmArjpjvX7Du8Vc0mXXp6x0Rwe_?fbclid=IwAR12el4rD5NzI96utznDG_tI8jAv1ln72HTEB6mC0cgHnV7OczDkkRqbBkc" download class="btn active" target="_blank">Download Apk</a>
+						<a href="developers.html" class="btn">Know the Developers</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var togglebtn=document.querySelector(".togglebtn");
+		var nav=document.querySelector(".navlinks");
+		var links=document.querySelector(".navlinks li");
+		
+		togglebtn.addEventListener("click", function(){
+			this.classList.toggle("click");
+			nav.classList.toggle("open");
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Certificate </title>
+	<link rel="stylesheet" href="certStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="lightbox.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<div class="hero-header">
+		<div class="wrapper">
+			<header>
+				<div class="logo">
+					<i class="fa-solid fa-c"></i>
+					<div class="logo-text">Certificate of Trainings and Webinars Attended</div>
+				</div>
+				<nav>
+					<div class="togglebtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul class="navlinks">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="project.html">My Project</a></li>
+						<!--<li><a href="#">Resume</a></li>-->
+						<li><a href="certificates.html">Certificates</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="container">
+				<div class="gallery">
+					<a href="images\cert1.png" data-lightbox="models" data-title="Adobe Lightroom Workshop for Students and Teachers - Beginner">
+						<img src="images\cert1.png">
+					</a>
+					<a href="images\cert2.png" data-lightbox="models" data-title="Adobe Lightroom Workshop for Students and Teachers - Intermediate">
+						<img src="images\cert2.png">
+					</a>
+					<a href="images\cert3.png" data-lightbox="models" data-title="Adobe Lightroom Workshop for Students and Teachers - Advanced">
+						<img src="images\cert3.png">
+					</a>
+					<a href="images\cert4.png" data-lightbox="models" data-title="Cybersercurity Awareness for the City College of Tagaytay">
+						<img src="images\cert4.png">
+					</a>
+					<a href="images\cert5.png" data-lightbox="models" data-title="Adobe InDesign Interactive Documents and Animations">
+						<img src="images\cert5.png">
+					</a>
+					<a href="images\cert6.png" data-lightbox="models" data-title="Electrical Safety in the Workplace">
+						<img src="images\cert6.png">
+					</a>
+					<a href="images\cert7.png" data-lightbox="models" data-title="Road to EXCELlence: An Intermediate Spreadsheet Training using MS Excel">
+						<img src="images\cert7.png">
+					</a>
+					<a href="images\cert8.png" data-lightbox="models" data-title="CALABARZON Cyber Talks: Best Praactices to Mitigate Common Cyber Threats">
+						<img src="images\cert8.png">
+					</a>
+					<a href="images\cert9.png" data-lightbox="models" data-title="Certifcate of Completion: OJT Training at MIS Office">
+						<img src="images\cert9.png">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var togglebtn=document.querySelector(".togglebtn");
+		var nav=document.querySelector(".navlinks");
+		var links=document.querySelector(".navlinks li");
+		
+		togglebtn.addEventListener("click", function(){
+			this.classList.toggle("click");
+			nav.classList.toggle("open");
+		})
+	</script>
+	<script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>

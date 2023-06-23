@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Michelle Salorsano </title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+	
+	
+</head>
+<body>
+	<div class="hero-header">
+		<div class="wrapper">
+			<header>
+				<div class="logo">
+					<i class="fa-solid fa-a"></i>
+					<div class="logo-text">About Me</div>
+				</div>
+				<nav>
+					<div class="togglebtn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul class="navlinks">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="project.html">My Project</a></li>
+						<!--<li><a href="#">Resume</a></li>-->
+						<li><a href="certificates.html">Certificates</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div class="container">
+				<div class="hero-pic">
+					<img src="images\idPic.png" alt="dp">
+				</div>
+				<div class="hero-text">
+					<h5>Hi I'm an <span class="input">Android Developer</span></h5>
+					<h1>Michelle Salorsano</h1>
+					<p align="justify">She graduated with a degree of Bachelor of Science in Information Technology from City College of Tagaytay. As well as, she
+					attended several trainings and webinars hosted by Department of Information and Communication Technology (DICT) and Creative Nation
+					Academy (CNA).</p>
+					<div class="btn-group">
+						<a href="images\Michelle-Salorsano-CV.png" download class="btn active" target="_blank">Download CV</a>
+					</div>
+					<div class="social">
+						<a href="https://web.facebook.com/michelle.salorsano/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+						<a href="https://www.linkedin.com/in/michelle-salorsano-8721a5278/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://www.instagram.com/miccheellleeee/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		var togglebtn=document.querySelector(".togglebtn");
+		var nav=document.querySelector(".navlinks");
+		var links=document.querySelector(".navlinks li");
+		
+		togglebtn.addEventListener("click", function(){
+			this.classList.toggle("click");
+			nav.classList.toggle("open");
+		})
+	</script>
+</body>
+</html>
